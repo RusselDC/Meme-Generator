@@ -10,7 +10,7 @@ const updateDetails = (url,title,auth) =>{
 }
 
 const generateMeme = () =>{
-   fetch("https://meme-api.herouapp.com/gimme")
+   fetch("https://meme-api.com/gimme")
      .then((res)=>res.json())
      .then(data=>{
       updateDetails(data.url,data.title,data.author)
